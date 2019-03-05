@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logan & Era do GeloS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <style type="text/css">
+
+        </style>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+
+        <div class="container-fluid" id="principal">
+            <div class="row">
+
+                <div class="col-12 col-md-6" id="menu">
+                    <<img src="img/icone.jpg" class="menufoto">
+                </div>
+
+                <div class="col-12 col-md-6" id="menu">
+                    <h1 class="titulo"> FILMES </h1>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div  style="background-image:url(img/rod1.jpg) id="fundoinicial" class="col-12">  
+                      <br/>
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+
+                            <img src="img/era.jpg" class="img" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="img/logan1.jpg" class="img" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="img/era3.jpg" class="img" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="img/logan2.jpg" class="img" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="img/era2.jpg" class="img" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="img/logan3.jpg" class="img" style="width:100%">
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+
+                    </div>
+
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1;
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>                  
+                </div>
+            </div>
+
+            <div class="row">
+                <div style="background-image:url(img/rod.png)" id="rodapeesquerdo" class="col-12 col-md-6">
+
+                    <br/>
+
+                    <a href="era.html"><img src="img/rod1.png" class="rod"></a>
+                </div>
+
+                <div style="background-image:url(img/rod.png)" id="rodapedireito" class="col-12 col-md-6">
+                    <br/>
+
+                    <a href="logan.html"><img src="img/rod2.png" class="rod"></a>
+                </div>                
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </body>
+</html>
